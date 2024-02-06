@@ -1,0 +1,23 @@
+package javaSpark;
+
+public class CountCharacter {
+
+	public static void main(String[] args) {
+		
+		// Given String 
+		String str="Automation";
+		StringBuffer sb= new StringBuffer(str);
+		System.out.println(	sb.reverse());
+		
+		int x=10;
+		while(x>0)
+		{
+			System.out.print(x + " ");
+			x--;
+		}
+		
+					
+			
+	
+}
+}

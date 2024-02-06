@@ -1,0 +1,20 @@
+package stepDefinations;
+import io.cucumber.java.en.Given;
+
+public class searchproductDefinatoinFile {
+	
+	@Given ("user should be on product site home page") 
+	public void user_should_be_on_product site_home_page()
+	{
+		
+	}
+	
+	@When("user search with shot name and extract actual name of product")
+	public void user_search_with_short_name_and_extract_actual_name_of_product(String strng)
+	{
+		
+	}
+	
+	
+
+}

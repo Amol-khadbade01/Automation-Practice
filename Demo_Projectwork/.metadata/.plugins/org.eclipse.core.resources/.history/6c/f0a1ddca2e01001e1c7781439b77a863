@@ -1,0 +1,25 @@
+package Example;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SwapNumber {
+
+	public static void main(String[] args) {
+		
+		
+		 int a=10,b=20;
+		 System.out.println("the number befor swap are" +a +b);
+		 a=a+b;
+		 b=a-b;
+		 a=a-b;
+		 
+		 System.out.println("the number after swap are" +a +b);
+		    
+		    		
+
+	}
+
+}

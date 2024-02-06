@@ -1,0 +1,14 @@
+package Demojavaprog;
+
+public class TestDemo10 {
+
+	public static void main(String[] args) {
+
+	String inputname="some name is hrer so please count the charater prestnt in this stirng"; 
+	
+	String[] charcount= inputname.split("\\s+");
+	System.out.println("The present charater are >-"+charcount.length);
+		
+	}
+
+}

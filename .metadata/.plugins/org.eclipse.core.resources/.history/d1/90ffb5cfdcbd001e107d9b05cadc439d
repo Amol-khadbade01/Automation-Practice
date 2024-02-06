@@ -1,0 +1,20 @@
+package SeleniumDemoProgram;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Test1 {
+	@Test
+	public void method1()
+	{
+		ChromeDriver driver= new ChromeDriver();
+		driver.get("https://www.amazon.in/ref=nav_logo");
+		driver.get(driver.getCurrentUrl());
+		driver.findElement(By.xpath("(//div[@class='a-section a-spacing-none _fluid-quad-image-label-v2_style_fluidImageContainer__2SOMr'])[1]")).click();	
+	}
+	
+
+	
+
+}

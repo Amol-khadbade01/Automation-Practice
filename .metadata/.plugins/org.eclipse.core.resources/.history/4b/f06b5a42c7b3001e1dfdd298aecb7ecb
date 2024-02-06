@@ -1,0 +1,15 @@
+package Demojavaprog;
+
+public class TestDemo9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1=0 , num2=0 , num3=0 ;
+		int input = 12321;
+		num3=num1+num2;
+		num1=num2;
+		num2=num3;
+		System.out.print(num3);
+	}
+
+}

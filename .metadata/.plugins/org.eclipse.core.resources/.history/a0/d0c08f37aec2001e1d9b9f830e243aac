@@ -1,0 +1,21 @@
+package Demojavaprog;
+
+
+public class test {
+
+	public static void main(String[] args) {
+	String str1="amol";
+	String str2="loma";
+	
+	str1=str1.toUpperCase();
+	str2=str2.toUpperCase();
+		
+		//String value=str1.concat(str2.concat(str3));
+		//System.out.println(value);
+		
+	
+		}
+		
+		
+	}
+	

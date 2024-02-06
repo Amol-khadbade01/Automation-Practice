@@ -1,0 +1,29 @@
+package Demojavaprog;
+
+import java.util.Arrays;
+
+
+
+public class TestDemo12
+
+{
+	public static void main(String[] args)
+
+	{
+String str="bhaue kya  suru    aahe    ";
+String tempstr="";
+char[] value= str.toCharArray();
+for(char c=!="")
+{
+	tempstr+=c;
+}
+
+
+
+
+
+		
+		
+		
+	}
+}

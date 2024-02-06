@@ -1,0 +1,50 @@
+package pageObject;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class nakuri_loginpage {
+
+	public WebDriver driver;
+
+	// constructor
+	nakuri_loginpage(WebDriver driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver,this);
+	}
+
+	// Locator
+
+	@FindBy(id="usernameField")
+	WebElement Username;
+
+	@FindBy(id="passwordField")
+	WebElement Password_user;
+
+	@FindBy(xpath="//button[text()='Login']")
+	WebElement login_btn;
+	
+	@FindBy(xpath="//a[@class='nI-gNb-header__logo nI-gNb-company-logo']//img[@alt='Naukri Logo']")
+	WebElement Check_logo;
+
+	// Action Method
+
+	public void setUsername(String EnterUsername) {
+		Username.sendKeys(EnterUsername);
+	}
+
+	public void setpassword(String Enterpassword) {
+		Password_user.sendKeys(Enterpassword);
+	}
+
+	public void clickloginbtn() {
+		login_btn.click();
+	}
+	
+	/*
+	 * public void Checktitlepagepresent () { driver.findElement(Check_logo).is }
+	 */
+
+}

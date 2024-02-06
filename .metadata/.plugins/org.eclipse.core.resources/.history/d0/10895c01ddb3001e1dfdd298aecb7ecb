@@ -1,0 +1,40 @@
+package Demojavaprog;
+
+public class TestDemo9 {
+
+	int i;
+
+	public static void main(String[] args) {
+		String string1="Race";
+        String string2="care";
+        
+        string1=string1.toLowerCase();
+        string2=string2.toLowerCase();
+        
+        if(string1.length()==string2.length())
+        {
+         // convert to to cahr array
+         char[] Arraystrng1= string1.toCharArray();
+         char[] Arraystrng2= string2.toCharArray();
+         
+         //sort the arrays
+         Arrays.sort(Arraystrng1);
+         Arrays.sort(Arraystrng2);
+         
+         boolean result =Arrays.equals(Arraystrng1,Arraystrng2);
+         if(result)
+         {
+          System.out.println(string1 + "  and   " + string2 +  " anagram");
+         }
+         else
+         {
+        System.out.println(string1 + "  and   " + string2 +  "not anagram");
+         }
+         
+        }
+        
+        System.out.println(" String is Not  anagram");
+    }
+	}
+
+}

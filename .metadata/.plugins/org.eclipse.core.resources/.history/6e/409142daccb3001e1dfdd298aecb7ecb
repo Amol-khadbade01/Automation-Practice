@@ -1,0 +1,42 @@
+package Demojavaprog;
+
+import java.util.Arrays;
+
+public class Check_anagram {
+
+	public static void main(String[] args) {
+		// take two string
+		String string1 = "Race";
+		String string2 = "Care";
+		
+		string1=string1.toLowerCase();
+		string2= string2.toLowerCase();
+
+		if (string1.length() == string2.length())
+
+		{// convert the above string into charArray
+			char[] charArray1 = string1.toCharArray();
+			char[] charArray2 = string2.toCharArray();
+
+			// Sort the Char Array
+			Arrays.sort(charArray1);
+			Arrays.sort(charArray2);
+
+			// if sort array is same then string is anagram
+			boolean result = Arrays.equals(charArray1, charArray2);
+			if (result) {
+				System.out.println(string1 + "  and   " + string2 + "are   anagram");
+			}
+
+			else {
+				System.out.println(string1 + "  and   " + string2 + "are Not  Anagram");
+			}
+			
+
+		}
+		
+		
+
+	}
+
+}

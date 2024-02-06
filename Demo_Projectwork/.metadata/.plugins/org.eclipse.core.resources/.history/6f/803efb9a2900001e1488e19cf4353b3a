@@ -1,0 +1,13 @@
+package Example;
+
+public class ReverseString {
+
+	public static void main(String[] args) 
+	{
+		String Frist_String="Amolkhadbade", String ="";
+		Char ch;
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package TestNGDemo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
+public class BasseClass {
+	WebDriver driver;
+	
+	String UserName="khadbadeamol@gmail.com";
+	String Password="Amol@9890";
+	String SaveBtn_click;
+	
+	
+	public void allelement_Nakri()
+	{
+	SaveBtn_click= driver.findElement(By.xpath("//div[@class=\"action s12\"]//button[@class=\"btn-dark-ot\"]"));
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package Demojavaprog;
+
+public class TestDemo10 {
+
+	public static void main(String[] args) {
+
+		String name="ACcdedfg fidff fdf df";
+		String[] array=name.split("\\s+");
+		System.out.println(array);
+		
+		
+	}
+
+}

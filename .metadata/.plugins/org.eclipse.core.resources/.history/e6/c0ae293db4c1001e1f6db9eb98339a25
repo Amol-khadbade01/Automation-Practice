@@ -1,0 +1,46 @@
+package PractiseDemo;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class practicePage {
+
+	static WebDriver driver;
+
+	@Test
+	public void Checkbox() {
+
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://cosmocode.io/automation-practice-webtable/");
+
+		int rowcount = driver.findElements(By.xpath("//table[@id='countries']//tr")).size();
+		int columncount = driver.findElements(By.xpath("//table[@id='countries']//tr[1]/td")).size();
+
+		System.out.println("The size of table row is " + rowcount);
+		System.out.println("The size of coloumn of table is " + columncount);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+		/*
+		 * for (int i = 1; i <= rowcount; i++) { for (int j = 1; j <= columncount; j++)
+		 * { String value = driver.findElement(By.xpath("//table[@id='countries']//tr["
+		 * + i + "]/td[" + j + "]")) .getText(); System.out.println(value); }
+		 * 
+		 * }
+		 */
+
+		checkstatus(driver, "2");
+		checkstatus(driver, "3");
+		checkstatus(driver, "7");
+	}
+
+	public static void checkstatus(WebDriver driver, String columncount) {
+	driver.findElement(By.xpath("//table[@id='countries']//tr[" + columncount + "]//td[1]//input")).click();
+	}
+
+}

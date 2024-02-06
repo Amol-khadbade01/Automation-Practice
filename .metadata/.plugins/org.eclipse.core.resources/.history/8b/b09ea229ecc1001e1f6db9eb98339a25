@@ -1,0 +1,17 @@
+package Demojavaprog;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		String str= "java selenium testng jenkin";
+		String [] s1= str.split(" ,");
+		for(String part:s1)
+		{
+			System.out.println(part);
+		}
+		
+		
+	}
+	
+}

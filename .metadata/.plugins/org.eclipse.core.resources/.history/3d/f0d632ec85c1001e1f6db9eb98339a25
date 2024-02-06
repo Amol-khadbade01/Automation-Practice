@@ -1,0 +1,26 @@
+package Demojavaprog;
+
+import java.util.HashSet;
+
+public class test {
+	
+	public static void main(String[]args)
+	{
+		int[] arr= {1,2,3,4,6,8,10};
+		
+	HashSet<Integer>uniquevalue= new HashSet<Integer>();
+	for(int number:arr)
+	{
+		uniquevalue.add(number);
+		
+	}
+	System.out.println(uniquevalue);
+	
+		
+		
+		
+		
+		
+	}
+    
+}

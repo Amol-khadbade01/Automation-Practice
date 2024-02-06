@@ -1,0 +1,17 @@
+package Demojavaprog;
+
+import java.util.Arrays;
+
+
+
+public class test {
+
+	public static void main(String[] args) {
+	int arr[]= {10,29,15,26,30,36};
+	Arrays.sort(arr);//10,15,26,29,30,36
+
+	int val=arr[arr.length-2];
+	System.out.println(val);
+	}
+
+}

@@ -1,0 +1,14 @@
+package Demojavaprog;
+
+public class TestDemo9 {
+	
+	int i;
+	
+
+	public static void main(String[] args) {
+		TestDemo9 t9= new TestDemo9();
+System.out.println(t9.i);	
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package pojo;
+import com.google.gson.Gson;
+
+public class CheckUserdata {
+
+	public static void main(String[] args) {
+		Userdata userdata= new Userdata();
+		
+
+	}
+
+}

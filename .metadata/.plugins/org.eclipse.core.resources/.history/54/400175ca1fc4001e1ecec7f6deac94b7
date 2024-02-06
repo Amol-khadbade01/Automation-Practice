@@ -1,0 +1,21 @@
+package Demojavaprog;
+
+import java.util.Arrays;
+
+public class TestDemo12
+
+{
+	public static void main(String[] args)
+
+	{
+
+		int list[] = { 15, 24, 48, 21, 43, 11, 79, 93 };
+		
+		Arrays.sort(list);
+		
+		int output=list[list.length-3];
+		System.out.println(output);
+		
+		
+	}
+}

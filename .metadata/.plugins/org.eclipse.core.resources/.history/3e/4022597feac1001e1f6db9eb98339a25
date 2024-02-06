@@ -1,0 +1,15 @@
+package Demojavaprog;
+
+
+public class test {
+
+	public static void main(String[] args) {
+	String str="java,selenium,TestNG,jkein";
+	  String[] s1 = str.split(" ,");
+	  for(int i=1;i<str.length();i++)
+	  {
+		  System.out.println(s1);
+	  }
+		
+	}
+}

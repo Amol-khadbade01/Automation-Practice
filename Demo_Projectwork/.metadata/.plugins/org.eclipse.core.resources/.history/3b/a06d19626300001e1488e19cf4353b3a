@@ -1,0 +1,26 @@
+package Automation_Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class DemoTest1 {
+	
+	
+	public static void main(String args[])
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.naukri.com/");
+		driver.manage().window().maximize();
+	
+		driver.findElement(By.xpath("//a[@id='login_Layer']")).click();
+		
+		WebElement UserName=driver.findElement(By.xpath("//input[@id='usernameField']"));
+		UserName.sendKeys("khadbadeamol@gmail.com");
+		WebElement Password=driver.findElement(By.xpath("//input[@id='passwordField']"));
+		Password.sendKeys("Amol@9890");
+	}
+
+}

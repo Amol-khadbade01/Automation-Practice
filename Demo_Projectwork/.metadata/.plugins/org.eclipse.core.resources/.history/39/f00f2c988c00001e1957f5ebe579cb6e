@@ -1,0 +1,15 @@
+package Example;
+
+import java.util.ArrayList;
+
+public class forEachExampl {
+
+	public static void main(String[] args) {
+	ArrayList<String> list= new ArrayList<>();
+	list.add("test");
+	list.add("test2");
+	list.add("test3");
+	list.add("test4");
+	}
+
+}

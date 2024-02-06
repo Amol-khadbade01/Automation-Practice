@@ -1,0 +1,25 @@
+package Example;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SwapNumber {
+
+	public static void main(String[] args) {
+		
+		
+		    WebDriver driver=new ChromeDriver();
+		    driver.get("https://www.naukri.com/");
+		 
+		    // Assuming driver is the WebDriver instance
+		    //By dynamicLocator = By.cssSelector("input[data-attr='value'][name='elementName']");
+		    //WebElement element = driver.findElement(dynamicLocator);
+
+		    
+		    		
+
+	}
+
+}

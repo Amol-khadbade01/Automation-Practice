@@ -1,0 +1,13 @@
+package Demojavaprog;
+
+public class TestDemo10 {
+
+	public static void main(String[] args) {
+
+		String name="ACcdedfg fidff fdf df";
+		char[] array=name.toCharArray();
+		System.out.println(array.length);
+		System.out.println("\\s+");
+	}
+
+}

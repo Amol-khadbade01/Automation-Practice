@@ -1,0 +1,18 @@
+package Automation_Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DemoWindowAlert {
+	
+	public static void main(String args[])
+	{
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--headless");
+		WebDriver driver=new FirefoxDriver();
+		driver.get("https://www.amazon.in/");
+		System.out.println("The title is ->" +driver.getTitle());
+		
+	}
+}

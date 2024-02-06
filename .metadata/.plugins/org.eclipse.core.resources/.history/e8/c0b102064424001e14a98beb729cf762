@@ -1,0 +1,13 @@
+package TestNGDemo;
+
+public class BasseClass {
+	
+	String UserName="khadbadeamol@gmail.com";
+	String Password="Amol@9890";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

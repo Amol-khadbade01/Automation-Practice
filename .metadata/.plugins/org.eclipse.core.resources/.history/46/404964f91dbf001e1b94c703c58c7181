@@ -1,0 +1,7 @@
+Feature: Search place and oreder the product from product list 
+Scenarios: user should have the same Search experience on search page and order Page
+Given user should be on product site home page
+When user search with short name and extract actual name of product
+Then user go and search the same short name on offer page to check same product is exist
+
+

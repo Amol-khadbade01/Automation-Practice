@@ -1,0 +1,13 @@
+package SeleniumSyntex;
+
+public class Seleniumwait {
+
+	 WebDriver driver= null;
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

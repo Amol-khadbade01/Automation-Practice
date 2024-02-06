@@ -1,0 +1,32 @@
+package stepDefinations;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class searchproductDefinatoinFile {
+	public WebDriver driver;
+
+	@Given("user should be on product site home page")
+	public void user_should_be_on_product_site_home_page() {
+		ChromeDriver driver= new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+
+	}
+
+	@When("user search with short name and extract actual name of product")
+	public void user_search_with_short_name_and_extract_actual_name_of_product(String shortname) {
+		driver.findElement(By.xpath("//input[@type='search'")).sendKeys(shortname);
+
+	}
+
+	@Then("user go and search the same short name on offer page to check same product is exist")
+	public void user_go_and_search_the_same_short_name_on_offer_page_to_check_same_product_is_exist(String stirng) {
+
+	}
+
+}

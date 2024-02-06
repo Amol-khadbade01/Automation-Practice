@@ -1,0 +1,10 @@
+package Demojavaprog;
+
+public class SortHashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

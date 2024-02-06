@@ -1,0 +1,62 @@
+package pageObject;
+
+import java.io.File;
+import java.time.Duration;
+import java.util.NoSuchElementException;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import dev.failsafe.internal.util.Durations;
+
+public class loginTest {
+
+	WebDriver driver;
+
+	@BeforeTest
+	public void Setup() {
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.naukri.com/nlogin/login");
+		driver.manage().window().maximize();
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofSeconds(10)).ignoring(NoSuchElementException.class);
+
+	}
+
+	TakesScreenshot scrShot =((TakesScreenshot)driver);
+
+    //Call getScreenshotAs method to create image file
+
+            File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+        //Move image file to new destination
+
+            File DestFile=new File("fileWithPath");
+
+            //Copy file at destination
+
+            FileUtils.copyFile(SrcFile, DestFile);
+
+	
+	
+
+	@Test
+	public void Verify_Login_nakuri() {
+		nakuri_loginpage login_nakuri = new nakuri_loginpage(driver);
+		login_nakuri.setUsername("khadbadeamol@gmail.com");
+		login_nakuri.setpassword("Amol@9890");
+		login_nakuri.clickloginbtn();
+
+	}
+
+}

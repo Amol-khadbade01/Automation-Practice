@@ -1,0 +1,14 @@
+package PractiseDemo;
+
+import org.openqa.selenium.WebDriver;
+
+public class practicePage {
+
+	static WebDriver driver;
+
+	public void PractisePage() 
+	{
+
+	}
+
+}

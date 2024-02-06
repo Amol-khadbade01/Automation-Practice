@@ -1,0 +1,17 @@
+package Demojavaprog;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		String str1= "java";
+		String str2= "selenium";
+		String str3= "automation";
+		
+		String value=str1.concat(str2.concat(str3));
+		System.out.println(value);
+		}
+		
+		
+	}
+	

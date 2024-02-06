@@ -1,0 +1,39 @@
+package Automation_Test;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+
+public class NakuriUpdate {
+	
+	
+	
+	public static void main(String args[]) throws InterruptedException
+	{
+		ChromeOptions opt=new ChromeOptions();
+		opt.addArguments("--headless");
+		
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.naukri.com/nlogin/login");
+		
+		driver.manage().window().maximize();
+		System.out.println("The Page Title is ->"+driver.getTitle());
+		Thread.sleep(1000);
+		//driver.findElement(By.xpath("//a[@id='login_Layer']")).click();
+		Thread.sleep(1000);
+		WebElement UserName=driver.findElement(By.xpath("//input[@id='usernameField']"));
+		Thread.sleep(1000);
+		UserName.sendKeys("khadbadeamol@gmail.com");
+		WebElement Password=driver.findElement(By.xpath("//input[@id='passwordField']"));
+		Password.sendKeys("Amol@9890");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+	}
+
+}

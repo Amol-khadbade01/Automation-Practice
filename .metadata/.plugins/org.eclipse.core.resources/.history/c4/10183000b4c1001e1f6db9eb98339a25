@@ -1,0 +1,34 @@
+package PractiseDemo;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class CheckboxList {
+	@Test
+	public void CheckItemFromList() {
+
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://cosmocode.io/automation-practice-webtable");
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().window().maximize();
+		int Rowcount = driver.findElements(By.xpath("//table[@id='countries']//tr")).size();
+		int coloumCount = driver.findElements(By.xpath("/table[@id='countries']//td")).size();
+		System.out.println(Rowcount);
+		System.out.println(coloumCount);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		for (int i = 1; i <= Rowcount; i++) {
+			for (int j = 1; j <= coloumCount; j++) {
+				String Value = driver.findElement(By.xpath("//table[@id='countries']//tr[" + i + "]//td[" + j + "]"))
+						.getText();
+
+				System.out.println(Value);
+			}
+			
+		}
+	}
+
+}

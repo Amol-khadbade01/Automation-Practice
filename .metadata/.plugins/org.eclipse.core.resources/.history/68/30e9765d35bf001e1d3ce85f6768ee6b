@@ -1,0 +1,8 @@
+Feature: Update the Nakuri page profile for User
+Scenarios:  Verify that user can update the nakuri profile
+Given	 User Land on the Nakuri page
+When	User Login to the Nakuri profile with valid <Username> and <password>
+Then User should Navigate to Nakuri Home page 
+
+
+

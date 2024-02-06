@@ -1,0 +1,22 @@
+package JavaExamples;
+
+public class TryCatchDemo {
+	
+int number=10;
+	int num=0;
+	
+
+	public static void main(String[] args) {
+	
+		try {
+			
+			int answer= number/num;
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+
+}

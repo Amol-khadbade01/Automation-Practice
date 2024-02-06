@@ -1,0 +1,18 @@
+package Demojavaprog;
+
+import java.util.Arrays;
+
+public class test {
+
+	public static void myStaticMethod() {
+        System.out.println("This is a static method.");
+    }
+
+    public static void main(String[] args) {
+        // Attempting to create an object of the class
+        test obj = new test();
+
+        // Attempting to call the static method through the object
+        obj.myStaticMethod(); // This will result in a compile-time error
+    }
+}
